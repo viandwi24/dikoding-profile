@@ -19,7 +19,7 @@ const listingMode = ref<'list' | 'grid'>('list')
 const fetch = async () => {
   isLoading.value = true
   try {
-    const url = `${window.location.href}.json`
+    const url = getPublicUrl(`/projects.json`)
     const data = await $fetch(url)
     if (data && Array.isArray(data) && data.length > 0 && data[0].name) {
       projects.value = data
