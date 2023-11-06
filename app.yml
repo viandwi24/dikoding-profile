@@ -16,3 +16,4 @@ handlers:
 env_variables:
   HOST: '0.0.0.0'
   NODE_ENV: 'production'
+  NUXT_PUBLIC_PUBLIC_URL: 'https://storage.googleapis.com/academyc284bsy3897-dikoding'
