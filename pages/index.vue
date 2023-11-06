@@ -32,7 +32,7 @@ onMounted(async () => {
   const canvas = document.getElementById('page-section-home-canvas') as HTMLCanvasElement
   if (canvas) {
     const app = new Spline(canvas)
-    await app.load('/scene.splinecode')
+    await app.load(getPublicUrl('/scene.splinecode'))
     await new Promise((resolve) => setTimeout(resolve, 1000))
     useLoading().isLoading.value = false
     window.addEventListener('resize', onResize)

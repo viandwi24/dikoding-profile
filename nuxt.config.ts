@@ -15,6 +15,13 @@ export default defineNuxtConfig({
     }
   },
 
+
+  runtimeConfig: {
+    public: {
+      publicUrl: '', // can be overridden by NUXT_PUBLIC_API_BASE environment variable
+    }
+  },
+
   css: [
     '~/assets/scss/main.scss'
   ],

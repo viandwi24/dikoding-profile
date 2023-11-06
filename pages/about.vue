@@ -28,7 +28,7 @@ onMounted(async () => {
   const canvas = document.getElementById('page-section-about-canvas') as HTMLCanvasElement
   if (canvas) {
     const app = new Spline(canvas)
-    await app.load('/scene_2.splinecode')
+    await app.load(getPublicUrl('/scene_2.splinecode'))
     await new Promise((resolve) => setTimeout(resolve, 1000))
     useLoading().isLoading.value = false
     window.addEventListener('resize', onResize)
@@ -68,7 +68,7 @@ onBeforeUnmount(() => {
         </div>
         <div class="w-2/8 px-4 flex justify-end">
           <div class="position-relative mypic-wrapper">
-            <img src="/mypic.jpg" alt="My Avatar" class="d-block img-fluid rounded mypic">
+            <img :src="getPublicUrl('/mypic.jpg')" alt="My Avatar" class="d-block img-fluid rounded mypic">
           </div>
         </div>
         <!-- <img src="https://avatars.githubusercontent.com/u/41994283?s=400&u=0e8f0bce9bc6b0edd4c43c329c8f04945d55baaa&v=4" alt="My Avatar" height="256px"> -->

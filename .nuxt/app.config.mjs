@@ -1,5 +1,5 @@
 
-import { defuFn } from '/Users/viandwi24/projects/oss/viandwi24.github.io/node_modules/.pnpm/defu@6.1.2/node_modules/defu/dist/defu.mjs'
+import { defuFn } from '/Users/viandwi24/projects/learn/dikoding-profile/node_modules/defu/dist/defu.mjs'
 
 const inlineConfig = {}
 
